@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2048</title>
+  <link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="assets/favicon-64.png" sizes="64x64" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-left">
+        <h1 class="title">2048</h1>
+      </div>
+      <div class="header-right">
+        <div class="score-box">
+          <div class="score-label">SCORE</div>
+          <div class="score-value" id="score">0</div>
+        </div>
+        <div class="score-box">
+          <div class="score-label">BEST</div>
+          <div class="score-value" id="best-score">0</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="subheader">
+      <p class="subtitle">合并方块，达到 <strong>2048</strong>！</p>
+      <button class="btn-new-game" id="new-game-btn">
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" style="vertical-align:middle;margin-right:4px">
+          <path d="M4 10a6 6 0 1 1 1.757 4.243l-1.415 1.414A8 8 0 1 0 2 10H0l3 3 3-3H4z"/>
+        </svg>
+        新游戏
+      </button>
+    </div>
+
+    <div class="board-wrapper">
+      <div class="board" id="board">
+        <!-- tile cells rendered by JS -->
+      </div>
+      <div class="overlay hidden" id="overlay">
+        <div class="overlay-content">
+          <div class="overlay-emoji" id="overlay-emoji"></div>
+          <div class="overlay-title" id="overlay-title"></div>
+          <div class="overlay-subtitle" id="overlay-subtitle"></div>
+          <div class="overlay-final-score" id="overlay-final-score"></div>
+          <div class="overlay-buttons">
+            <button class="btn-overlay" id="btn-continue">继续游戏</button>
+            <button class="btn-overlay btn-primary" id="btn-restart">重新开始</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="hint">使用 <strong>方向键</strong> 或 <strong>滑动屏幕</strong> 移动方块。</p>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
