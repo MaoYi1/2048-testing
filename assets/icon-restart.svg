@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <!-- Circular arrow / restart icon -->
+  <path d="M10 3 A7 7 0 1 0 16.5 7.5" stroke="#F9F6F2" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Arrowhead pointing forward -->
+  <polyline points="14,4 17,7 14,10" stroke="#F9F6F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
